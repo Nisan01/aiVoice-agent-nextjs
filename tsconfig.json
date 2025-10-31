@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "app/provider.jsx", "app/layout.jsx"  ],
+, "app/provider.jsx", "app/layout.jsx", "app/(main)/_components/HeroSection.jsx", "app/(main)/dashboard/_components/LectureHistory.jsx", "app/(main)/dashboard/_components/Feedback.jsx", "app/(main)/discussion-room/[roomId]/page.jsx", "app/api/message/route.js", "app/api/generateSummary/route.js", "app/page.jsx", "app/authProvider.jsx"  ],
   "exclude": ["node_modules"]
 }

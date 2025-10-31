@@ -10,7 +10,7 @@ const openai = new OpenAI({
 
 
 
-export async function POST(req: Request) {
+export async function POST(req) {
   try {
     const { coachingOptions, messages } = await req.json();
 

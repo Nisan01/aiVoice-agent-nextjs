@@ -7,7 +7,7 @@ import { api } from '../ai-agent/convex/_generated/api';
 import { UserContext } from './__context/userContext';
 import { useState } from 'react';
 
-function AuthProvider({children}: {children: React.ReactNode}) {
+function AuthProvider({children}) {
 
 const user=useUser();
 

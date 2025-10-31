@@ -11,7 +11,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENROUTER_SECRET_API_KEY, 
 });
 
-export async function GET(req: Request) {
+export async function GET(req) {
   try {
     
     const names = {

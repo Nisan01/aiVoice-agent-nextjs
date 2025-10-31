@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { useUser } from "@stackframe/stack";
 import { useRouter } from "next/navigation";
-import AppHeader from "../app/(main)/_components/AppHeader";
-import LandingPageContent from "../app/(main)/_components/HeroSection";
+import AppHeader from "./(main)/_components/AppHeader";
+import LandingPageContent from "./(main)/_components/HeroSection";
 
 export default function Page() {
   const user = useUser();
