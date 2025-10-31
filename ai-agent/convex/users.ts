@@ -26,7 +26,7 @@ export const createUser=mutation({
 
             })
             return insertData;
-            console.log("New User Created:",newUSer);
+
 
     }
     return userData[0];
