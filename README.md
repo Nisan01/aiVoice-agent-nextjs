@@ -36,5 +36,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
-##Credits
-Regarding credits if the vapi credits are over ,you can use another gmail and take free of 10$ credit and use it in your project . Also for open ai model , mostly it is free and if not just change the model name thats it guys ,,Enjoy !!
+
+:Regarding credits if the vapi credits are over ,you can use another gmail and take free of 10$ credit and use it in your project . Also for open ai model , mostly it is free and if not just change the model name thats it guys ,,Enjoy !!
