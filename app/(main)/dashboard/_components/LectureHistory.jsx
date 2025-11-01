@@ -10,7 +10,7 @@ import Image from "next/image";
 import moment from "moment";
 import Link from "next/link";
 
-function Feedback() {
+function LectureHistory() {
   const convex = useConvex();
   const { userData } = useContext(UserContext);
   const [lectureData, setLectureData] = useState([]);
@@ -26,27 +26,23 @@ function Feedback() {
     setLectureData(result);
   };
 
-  // Filter only feedback-type sessions
-  const feedbackOptions = [
-    "Mock Interview",
-    "Ques Ans Preparation",
-    "Quiz Preparation",
-  ];
-  const filteredFeedbacks = lectureData.filter((item) =>
-    feedbackOptions.includes(item.coachingOptions)
+  // Filter only lecture-type sessions
+  const lectureOptions = ["Topic based Lecture", "Language Class"];
+  const filteredLectures = lectureData.filter((item) =>
+    lectureOptions.includes(item.coachingOptions)
   );
 
   return (
-    <div className="ml-4">
-      <h2 className="font-bold text-xl mb-3">Your Feedbacks</h2>
+    <div>
+      <h2 className="font-bold text-xl mb-3">Your Previous Lectures</h2>
 
-      {filteredFeedbacks.length === 0 && (
+      {filteredLectures.length === 0 && (
         <h3 className="text-gray-400 text-sm">
-          You don’t have any feedback yet!
+          You don’t have any lectures yet!
         </h3>
       )}
 
-      {filteredFeedbacks.map((item, index) => {
+      {filteredLectures.map((item, index) => {
         // Find matching icon from ExpertLists
         const imageData = ExpertLists.find(
           (exp) => exp.name === item.coachingOptions
@@ -62,7 +58,7 @@ function Feedback() {
                   width={50}
                   height={50}
                   alt={item.coachingOptions}
-                  className="object-cover rounded h-[3.8rem]"
+                  className="rounded object-cover w-[3.5rem] h-[3.8rem]"
                 />
                 <div>
                   <h2 className="font-bold text-gray-600">{item.topic}</h2>
@@ -77,7 +73,7 @@ function Feedback() {
                   className="invisible group-hover:visible"
                   variant="outline"
                 >
-                  View Feedback
+                  View Notes
                 </Button>
               </Link>
             </div>
@@ -88,4 +84,4 @@ function Feedback() {
   );
 }
 
-export default Feedback;
+export default LectureHistory;
