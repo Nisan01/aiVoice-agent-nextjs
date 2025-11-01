@@ -33,7 +33,7 @@ function Feedback() {
   };
 
   return (
-    <div className="ml-4">
+    <div className="ml-0 lg:ml-4 md:ml-4 sm:ml-4">
       <h2 className="font-bold text-xl">Your Feedbacks</h2>
       {lectureData?.length === 0 && (
         <h3 className="text-gray-400 text-sm">
